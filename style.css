@@ -1,11 +1,15 @@
 #maintitle{
     text-align: center;
+    border-style:dashed;
+    border-color: brown;
 }
 .content-section {
      padding: 1rem; margin: 1rem 0; border: 1px solid #456; 
-    text-align: center;}
+}
 #hobbies {
      background-color: #f1f6fa; }
 img {
      max-width: 100%; height: auto; }
-
+a {
+    
+}
