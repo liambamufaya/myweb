@@ -10,6 +10,8 @@
      background-color: #f1f6fa; }
 img {
      max-width: 100%; height: auto; }
-a {
-    
+th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px 12px;
 }
