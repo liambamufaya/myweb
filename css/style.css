@@ -1,7 +1,5 @@
 #maintitle{
     text-align: center;
-    border-style:dashed;
-    border-color: brown;
 }
 .content-section {
      padding: 1rem; margin: 1rem 0; border: 1px solid #456; 
@@ -14,4 +12,37 @@ th, td {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px 12px;
+}
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+nav a {
+    color: #c31818;
+    text-decoration: none;
+    padding: 0.6rem 0.9rem;
+    margin: 0.2rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--accent-color);
+    outline: none;
+}
+nav a:hover, nav a:focus {
+    background-color: var(--accent-color);
+    outline: none;
 }

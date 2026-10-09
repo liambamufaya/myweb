@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer ></script>
     <title>My web</title>
 </head>
 <body>
-    <header></header>
-    <nav>
+    <header>
+        <div class="header-container">
+            <h1 id="maintitle">Liamba Mufaya</h1>
+            <p class="subtitle">ICT Student | Registration No: 202501125</p>
+            <button id="theme-toggle-btn" class="btn">🌙 Switch Theme</button>
+        </div>
+    </header>
+    
+   <nav>
+    <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+         Menu
+    </button>
+    <div class="nav-links" id="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#learningpath">Learning Path</a>
         <a href="#hobbies">Hobbies</a>
-        <a href="#learningpath">LearningPath</a>
+        <a href="#skills">Skills</a>
         <a href="#photos">Photos</a>
-    </nav>
+        <a href="#media">Media</a>
+        <a href="#contacts">Contact</a>
+    </div>
+</nav>
     <main>
     
     <h1 id="maintitle" >Welcome to Web Programming</h1>
@@ -88,6 +105,16 @@
             </tr>
         </tbody>
     </table>
+    </section>
+    <section class="content-section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>JAVASCRIPT</li>
+            <ol>CASCADING STYLE SHEETS</li>
+            <li>VERSION CONTROL</li>
+        </ul>
+
     </section>
 
     <section id="contacts" class="content-section">
