@@ -37,7 +37,9 @@ nav a {
     transition: background-color 0.2s;
     text-align: center;
 }
-
+nav {
+    text-align: center;
+}
 nav a:hover, nav a:focus {
     background-color: var(--accent-color);
     outline: none;
@@ -45,4 +47,73 @@ nav a:hover, nav a:focus {
 nav a:hover, nav a:focus {
     background-color: var(--accent-color);
     outline: none;
+}
+
+/* Main Container & Sections */
+main {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.content-section, .hero-section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section {
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+ /* Base Palette & Typography */
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --primary-color: #1e3a8a;
+    --primary-hover: #1d4ed8;
+    --accent-color: #2563eb;
+    --border-color: #e2e8f0;
+    --error-color: #dc2626;
+    --success-bg: #dcfce7;
+    --success-border: #86efac;
+}
+
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --card-bg: #1e293b;
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --accent-color: #93c5fd;
+    --border-color: #334155;
+    --error-color: #f87171;
+    --success-bg: #064e3b;
+    --success-border: #059669;
+}
+
+/* Box sizing reset for predictable sizing across viewports */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Header & Nav */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
 }

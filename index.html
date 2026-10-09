@@ -179,16 +179,34 @@
             <input type="email" name="email" id="email" required><br>
             <button type="submit">Submit</button>
         </form>
- 
-    <section>
-        <h2>About me</h2>
-        <p>
-        I am a driven and curious professional passionate about solving complex
-        problems and creating meaningful impact. With a strong blend of creativity,
-         analytical thinking, and effective communication,
-         I thrive in dynamic environments. Always eager to learn and adapt, I continually
-        </p>
-    </section>
+   <!-- Contact Form Section -->
+        <section id="contacts" class="content-section">
+            <h2>My Contacts</h2>
+            <p><em>Browser demonstration only — no message is sent.</em></p>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" required>
+                    <small class="error-text" id="name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <small class="error-text" id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <small class="error-text" id="message-error"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div id="form-preview" class="preview-box" style="display: none;"></div>
+        </section>
     <p>If you want to learn more about web programming you can visit <a href="https://www.theodinproject.com/">The Odin Project</a></p>
     </main>
     <footer></footer>

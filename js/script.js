@@ -19,7 +19,7 @@
         });
 });
 
-
+// Gallery Viewer
 const photos = [
         { src: "images/ramstick.jpg", alt: "RAM Stick", caption: "A close-up view of a computer RAM stick module." },
         { src: "images/cube.jpg", alt: "Rubik's Cube", caption: "A colorful solved Rubik's cube on a table." },
@@ -51,3 +51,4 @@ const photos = [
         currentPhotoIndex = (currentPhotoIndex === photos.length - 1) ? 0 : currentPhotoIndex + 1;
         updateGallery();
     });
+
