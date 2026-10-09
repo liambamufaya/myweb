@@ -133,3 +133,38 @@ const photos = [
             formPreview.style.display = "none";
         }
     });
+/* ========================================================
+        Skills / Projects Search Filter
+       ======================================================== */
+    const skillSearchInput = document.getElementById("skill-search");
+    const resetFilterBtn = document.getElementById("reset-filter-btn");
+    const skillCards = document.querySelectorAll(".skill-card");
+    const filterMessage = document.getElementById("filter-message");
+
+    function filterSkills() {
+        const query = skillSearchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        skillCards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(query)) {
+                card.style.display = "block";
+                visibleCount++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        if (visibleCount === 0) {
+            filterMessage.textContent = "No matching skills or projects found.";
+        } else {
+            filterMessage.textContent = "";
+        }
+    }
+
+    skillSearchInput.addEventListener("input", filterSkills);
+
+    resetFilterBtn.addEventListener("click", () => {
+        skillSearchInput.value = "";
+        filterSkills();
+    });
