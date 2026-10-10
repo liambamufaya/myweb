@@ -1,6 +1,4 @@
 ICT251 Activity 3: Interactive Personal Web Portfolio
-Live link: https://liambamufaya-static-site.onrender.com
-
 Student Name: Liamba Mufaya
 
 
@@ -16,9 +14,9 @@ The site is hosted live as a static site via Render connected directly to GitHub
 
 🚀 Live Demo & Source Code
 
-Live Website URL: https://your-app-name.onrender.com
+Live Website URL: https://liambamufaya-static-site.onrender.com
 
-GitHub Repository: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+GitHub Repository: "https://github.com/liambamufaya/myweb.git"
 
 ✨ JavaScript Features Implemented
 
